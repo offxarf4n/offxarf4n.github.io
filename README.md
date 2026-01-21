@@ -320,43 +320,43 @@
         .skill-item:nth-child(1) {
             background: linear-gradient(135deg, #dc143c, #8b0000);
             color: white;
-            border: 2px solid #dc143c;
+            border: 2px solid #8b0000;
         }
         
         .skill-item:nth-child(2) {
             background: linear-gradient(135deg, #003d82, #001f4d);
             color: white;
-            border: 2px solid #003d82;
+            border: 2px solid #001f4d;
         }
         
         .skill-item:nth-child(3) {
             background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
             color: white;
-            border: 2px solid #2c2c2c;
+            border: 2px solid #1a1a1a;
         }
         
         .skill-item:nth-child(4) {
-            background: linear-gradient(135deg, #dc143c, #ff6b6b);
+            background: linear-gradient(135deg, #8b0000, #dc143c);
             color: white;
-            border: 2px solid #dc143c;
+            border: 2px solid #660000;
         }
         
         .skill-item:nth-child(5) {
             background: linear-gradient(135deg, #003d82, #4169e1);
             color: white;
-            border: 2px solid #003d82;
+            border: 2px solid #001f4d;
         }
         
         .skill-item:nth-child(6) {
             background: linear-gradient(135deg, #2c2c2c, #404040);
             color: white;
-            border: 2px solid #2c2c2c;
+            border: 2px solid #1a1a1a;
         }
         
         .skill-item:nth-child(n+7) {
             background: linear-gradient(135deg, #dc143c, #003d82);
             color: white;
-            border: 2px solid #dc143c;
+            border: 2px solid #8b0000;
         }
         
         .skill-item::before {
@@ -476,8 +476,198 @@
                 font-size: 14px;
             }
         }
+        
+        /* Dynamic theme island styling */
+        .theme-island {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 8px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .theme-option {
+            background: rgba(255,255,255,0.2);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .theme-option:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        
+        .theme-option::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .theme-option:hover::before {
+            left: 100%;
+        }
+        
+        /* Dark mode theme island */
+        body.dark-mode .theme-island {
+            background: rgba(0,0,0,0.95);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        body.dark-mode .theme-option {
+            background: rgba(0,0,0,0.2);
+            border: 2px solid rgba(255,255,255,0.1);
+        }
+        
+        body.dark-mode .theme-option:hover {
+            background: rgba(0,0,0,0.3);
+        }
+        
+        /* Theme toggle button styling */
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+        
+        .theme-btn {
+            background: rgba(255,255,255,0.2);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        
+        /* Dark mode styles */
+        body.dark-mode {
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
+                linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 25%, #2c2c2c 50%, #1a1a1a 75%, #0a0a0a 100%);
+            color: #ffffffe0;
+        }
+        
+        body.dark-mode .profile-container {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 50%, #1a1a1a 100%);
+            box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.2), 0 8px 32px rgba(0, 61, 130, 0.1), 0 16px 48px rgba(44, 44, 44, 0.1);
+        }
+        
+        body.dark-mode .item {
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 50%, #2c2c2c 100%);
+            border: 1px solid rgba(220, 20, 60, 0.2);
+        }
+        
+        body.dark-mode .item:hover {
+            background: linear-gradient(135deg, #3c3c3c 0%, #2a2a2a 50%, #3c3c3c 100%);
+            box-shadow: 0 8px 25px rgba(220, 20, 60, 0.1);
+        }
+        
+        body.dark-mode .about-text {
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 50%, #2c2c2c 100%);
+            border: 1px solid rgba(220, 20, 60, 0.2);
+            color: #ffffff99;
+        }
+        
+        body.dark-mode .section-title {
+            color: #ffffffe0;
+        }
+        
+        body.dark-mode .section-title::before {
+            border-color: transparent transparent #dc143c transparent;
+        }
+        
+        body.dark-mode .item-title {
+            color: #ffffffe0;
+        }
+        
+        body.dark-mode .item-description {
+            color: #ffffff99;
+        }
+        
+        body.dark-mode .header {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+        }
+        
+        body.dark-mode .header-name {
+            background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        body.dark-mode .header-headline {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        body.dark-mode .theme-btn {
+            background: rgba(0,0,0,0.2);
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        body.dark-mode .theme-btn:hover {
+            background: rgba(0,0,0,0.3);
+        }
+        
+        /* Smooth transitions for all interactive elements */
+        * {
+            transition: color 0.2s ease, background-color 0.2s ease;
+        }
     </style>
 </head>
+<script>
+    function toggleTheme() {
+        const body = document.body;
+        const themeBtn = document.querySelector('.theme-btn');
+        
+        if (body.classList.contains('dark-mode')) {
+            body.classList.remove('dark-mode');
+            themeBtn.textContent = '🌙';
+            localStorage.setItem('theme', 'light');
+        } else {
+            body.classList.add('dark-mode');
+            themeBtn.textContent = '🌙';
+            localStorage.setItem('theme', 'dark');
+        }
+    }
+    
+    // Load saved theme
+    document.addEventListener('DOMContentLoaded', function() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            document.querySelector('.theme-btn').textContent = '🌙';
+        }
+    });
+</script>
 <body>
 
     <!-- Main container for the entire profile -->
@@ -487,7 +677,10 @@
         <header class="header">
             <div class="header-content">
                 <h1 class="header-name">Arfan Ahmad Faiz</h1>
-                <p class="header-headline">Future Pilot | Academic Excellence | Swimming Champion</p>
+                <p class="header-headline">Future Pilot | Academic Excellence | Swimming Champion | Baller</p>
+                <div class="theme-island">
+                    <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+                </div>
             </div>
         </header>
         
@@ -496,7 +689,8 @@
             <h2 class="section-title">About</h2>
             <div class="about-text">
                 Hello! I'm Arfan Ahmad Faiz, a passionate student who loves learning new skills and 
-                taking on challenges. I believe in continuous growth and pushing myself to achieve my goals. 
+                taking on challenges. I am currently studying in GEMS New Millennium School (GNMS) - Yr11i2. 
+                I believe in continuous growth and pushing myself to achieve my goals. 
                 I enjoy sports, teamwork, and personal development activities that help me become a better person.
             </div>
         </section>
@@ -529,18 +723,39 @@
                     • 3rd Position - Backstroke 100m
                 </p>
             </div>
+            
+            <!-- Trinity College Achievement -->
+            <div class="item">
+                <h3 class="item-title">
+                    <span>TRINITY College London - Performing Arts</span>
+                    <span class="badge academic">Grade 5 with Merit</span>
+                </h3>
+                <p class="item-description">
+                    Successfully completed Grade 5 Performing Arts examination with Trinity College London, 
+                    achieving Merit grade. This demonstrates dedication to artistic development and 
+                    performance skills.
+                </p>
+            </div>
         </section>
         
         <!-- Skills section -->
         <section class="section">
             <h2 class="section-title">Skills</h2>
             <div class="skills-grid">
-                <div class="skill-item">Swimming</div>
-                <div class="skill-item">Football</div>
-                <div class="skill-item">Gaming</div>
                 <div class="skill-item">Teamwork</div>
                 <div class="skill-item">Leadership</div>
                 <div class="skill-item">Time Management</div>
+                <div class="skill-item">Adaptability</div>
+            </div>
+        </section>
+        
+        <!-- Hobbies section -->
+        <section class="section">
+            <h2 class="section-title">Hobbies</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Swimming</div>
+                <div class="skill-item">Football</div>
+                <div class="skill-item">Gaming</div>
             </div>
         </section>
         
@@ -579,13 +794,15 @@
                     <span class="badge">Goal</span>
                 </h3>
                 <p class="item-description">
-                    I plan to pursue Economics in college, building on my strong foundation from IGCSE 
-                    where I achieved an A* grade. This aligns with my interest in understanding 
-                    global markets, financial systems, and economic policies that shape our world.
+                    I aim to do my pilot training course along with pursuing Economics in college. 
+                    This dual approach will help me specialize in economics while working towards my 
+                    childhood dream of becoming a pilot. The college education will provide the 
+                    theoretical foundation while pilot training gives me practical aviation skills.
                 </p>
             </div>
         </section>
         
+                
     </div>
 
 </body>
