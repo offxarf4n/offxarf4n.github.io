@@ -259,6 +259,9 @@
             border-radius: 12px;
             font-size: 12px;
             font-weight: 500;
+            position: absolute;
+            top: 12px;
+            right: 12px;
         }
         
         .item-title .badge.completed {
@@ -268,6 +271,9 @@
             border-radius: 12px;
             font-size: 12px;
             font-weight: 500;
+            position: absolute;
+            top: 12px;
+            right: 12px;
         }
         
         .item-title .badge.academic {
@@ -277,6 +283,9 @@
             border-radius: 12px;
             font-size: 12px;
             font-weight: 500;
+            position: absolute;
+            top: 12px;
+            right: 12px;
         }
         
         .item-title .badge.sports {
@@ -286,6 +295,9 @@
             border-radius: 12px;
             font-size: 12px;
             font-weight: 500;
+            position: absolute;
+            top: 12px;
+            right: 12px;
         }
         
         .item-description {
