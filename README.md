@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <!-- LinkedIn-style Student Profile for Arfan Ahmad Faiz -->
 <html lang="en">
 <head>
