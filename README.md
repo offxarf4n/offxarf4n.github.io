@@ -659,6 +659,7 @@
         }
     }
     
+        
     // Load saved theme
     document.addEventListener('DOMContentLoaded', function() {
         const savedTheme = localStorage.getItem('theme');
@@ -802,7 +803,7 @@
             </div>
         </section>
         
-                
+                        
     </div>
 
 </body>
