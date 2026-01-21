@@ -659,7 +659,19 @@
         }
     }
     
+    function toggleContact() {
+        const contactContent = document.getElementById('contact-content');
+        const contactTitle = document.querySelector('section:last-child .section-title');
         
+        if (contactContent.style.display === 'none') {
+            contactContent.style.display = 'flex';
+            contactTitle.innerHTML = 'Contact ▲';
+        } else {
+            contactContent.style.display = 'none';
+            contactTitle.innerHTML = 'Contact ▼';
+        }
+    }
+    
     // Load saved theme
     document.addEventListener('DOMContentLoaded', function() {
         const savedTheme = localStorage.getItem('theme');
@@ -803,7 +815,16 @@
             </div>
         </section>
         
-                        
+        <!-- Contact section -->
+        <section class="section">
+            <h2 class="section-title" onclick="toggleContact()" style="cursor: pointer; user-select: none;">Contact ▼</h2>
+            <div class="skills-grid" id="contact-content" style="display: none;">
+                <div class="skill-item">📱 +971 552811077</div>
+                <div class="skill-item">📧 arfanibnfaiz@gmail.com</div>
+                <div class="skill-item">📷 @offx.arf4n</div>
+            </div>
+        </section>
+                
     </div>
 
 </body>
