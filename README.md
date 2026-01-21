@@ -1,4 +1,3 @@
-
 <!-- LinkedIn-style Student Profile for Arfan Ahmad Faiz -->
 <html lang="en">
 <head>
@@ -22,19 +21,55 @@
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.5;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+                linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 25%, #dc143c 50%, #003d82 75%, #1a1a1a 100%);
             background-attachment: fixed;
             color: #000000e0;
             padding: 20px;
             margin: 0;
+            position: relative;
         }
         
-        /* Colorful container with rainbow effects */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><radialGradient id="ballGradient"><stop offset="0%" style="stop-color:white;stop-opacity:0.3"/><stop offset="100%" style="stop-color:white;stop-opacity:0.1"/></radialGradient></defs><circle cx="100" cy="100" r="80" fill="url(%23ballGradient)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/><path d="M100 40 L100 160 M40 100 L160 100" stroke="rgba(255,255,255,0.3)" stroke-width="2"/><path d="M100 40 Q60 100 100 160 Q140 100 100 40" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/><path d="M60 60 L100 40 L140 60 L160 100 L140 140 L100 160 L60 140 L40 100 L60 60" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/><path d="M100 40 L140 60 L100 80 L60 60 L100 40" fill="rgba(255,255,255,0.15)"/><path d="M100 80 L140 100 L100 120 L60 100 L100 80" fill="rgba(255,255,255,0.15)"/><path d="M100 120 L140 140 L100 160 L60 140 L100 120" fill="rgba(255,255,255,0.15)"/><path d="M60 60 L100 80 L60 100 L40 100 L60 60" fill="rgba(255,255,255,0.15)"/><path d="M60 100 L100 120 L60 140 L40 140 L60 100" fill="rgba(255,255,255,0.15)"/></svg>');
+            background-size: 300px 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.4;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1200"><defs><linearGradient id="planeGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgba(255,255,255,0.25)"/><stop offset="100%" style="stop-color:rgba(255,255,255,0.08)"/></linearGradient></defs><path d="M100 600 L400 480 L700 420 L1000 400 L1300 420 L1600 480 L1900 600 L1900 900 L1600 880 L1300 860 L1000 840 L700 860 L400 880 L100 900 Z" fill="none" stroke="url(%23planeGradient)" stroke-width="3"/><path d="M700 420 L800 320 L900 260 L1000 240 L1100 260 L1200 320 L1300 420 L1400 520 L1500 620 L1600 720" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M1000 240 L980 180 L970 120 L980 60 L1000 0 L1020 60 L1030 120 L1020 180 L1000 240" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M400 480 L300 380 L250 280 L270 180 L300 80 L400 30 L500 80 L530 180 L550 280 L500 380 L400 480" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M1300 420 L1400 320 L1500 260 L1520 180 L1500 80 L1400 30 L1300 80 L1280 180 L1300 280 L1350 380 L1300 420" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M1000 400 L980 380 L970 360 L980 340 L1000 320 L1020 340 L1030 360 L1020 380 L1000 400" fill="none" stroke="url(%23planeGradient)" stroke-width="1.5"/><circle cx="1000" cy="600" r="20" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M980 600 L960 580 L940 560 L960 540 L980 520" fill="none" stroke="url(%23planeGradient)" stroke-width="1.5"/><path d="M1020 600 L1040 580 L1060 560 L1040 540 L1020 520" fill="none" stroke="url(%23planeGradient)" stroke-width="1.5"/><path d="M1000 620 L1000 660 L1000 720" fill="none" stroke="url(%23planeGradient)" stroke-width="1.5"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+            pointer-events: none;
+            z-index: -2;
+        }
+        
+        /* Container with red, blue, black matte grey theme */
         .profile-container {
             max-width: 1128px;
             margin: 0 auto;
-            background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 50%, #ffffff 100%);
-            box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.3), 0 8px 32px rgba(102, 126, 234, 0.2), 0 16px 48px rgba(240, 147, 251, 0.15);
+            background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 50%, #ffffff 100%);
+            box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.3), 0 8px 32px rgba(0, 61, 130, 0.2), 0 16px 48px rgba(44, 44, 44, 0.15);
             border-radius: 16px;
             overflow: hidden;
             position: relative;
@@ -47,30 +82,52 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe, #667eea);
+            background: linear-gradient(90deg, #dc143c, #003d82, #2c2c2c, #dc143c, #003d82, #2c2c2c);
             background-size: 200% 100%;
-            animation: rainbow 3s linear infinite;
+            animation: colorShift 3s linear infinite;
         }
         
-        @keyframes rainbow {
+        @keyframes colorShift {
             0% { background-position: 0% 0%; }
             100% { background-position: 200% 0%; }
         }
         
-        /* Vibrant header with colorful gradient */
+        /* Black banner header */
         .header {
             position: relative;
             height: 200px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
             overflow: hidden;
-            animation: gradientShift 8s ease infinite;
-            background-size: 400% 400%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
         
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        .header-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+        
+        .header-name {
+            font-size: 3.5em;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: -1px;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header-headline {
+            font-size: 1.3em;
+            margin: 10px 0 0 0;
+            font-weight: 400;
+            color: rgba(255,255,255,0.9);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
         
         .header::before {
@@ -80,8 +137,8 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200"><defs><pattern id="pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="2" fill="white" opacity="0.3"/></pattern></defs><rect width="1200" height="200" fill="url(%23pattern)"/></svg>');
-            opacity: 0.6;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200"><defs><pattern id="pattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse"><circle cx="30" cy="30" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="1200" height="200" fill="url(%23pattern)"/></svg>');
+            opacity: 0.8;
         }
         
         /* Profile section with centered heading */
@@ -138,18 +195,18 @@
             height: 0;
             border-style: solid;
             border-width: 0 0 8px 8px;
-            border-color: transparent transparent #0a66c2 transparent;
+            border-color: transparent transparent #dc143c transparent;
             transform: rotate(-45deg);
         }
         
-        /* Colorful cards with gradients */
+        /* Cards with red, blue, black matte grey theme */
         .item {
-            background: linear-gradient(135deg, #f8f9ff 0%, #e8f0ff 50%, #f5f7ff 100%);
+            background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 50%, #f5f5f5 100%);
             border-radius: 12px;
             padding: 16px;
             margin-bottom: 16px;
             transition: all 0.3s ease;
-            border: 1px solid rgba(102, 126, 234, 0.1);
+            border: 1px solid rgba(220, 20, 60, 0.1);
             position: relative;
             overflow: hidden;
         }
@@ -161,7 +218,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+            background: linear-gradient(90deg, transparent, rgba(220, 20, 60, 0.1), transparent);
             transition: left 0.6s ease;
         }
         
@@ -170,9 +227,9 @@
         }
         
         .item:hover {
-            background: linear-gradient(135deg, #e8f0ff 0%, #dce7ff 50%, #e8f0ff 100%);
+            background: linear-gradient(135deg, #fff5f5 0%, #f0f0f0 50%, #f5f5f5 100%);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+            box-shadow: 0 8px 25px rgba(220, 20, 60, 0.15);
         }
         
         .item:last-child {
@@ -196,8 +253,35 @@
         }
         
         .item-title .badge {
-            background-color: #0a66c2;
+            background-color: #dc143c;
             color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .item-title .badge.completed {
+            background-color: #28a745;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .item-title .badge.academic {
+            background-color: #28a745;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .item-title .badge.sports {
+            background-color: #ffd700;
+            color: #333;
             padding: 2px 8px;
             border-radius: 12px;
             font-size: 12px;
@@ -232,47 +316,47 @@
             letter-spacing: 0.5px;
         }
         
-        /* Rainbow skill colors */
+        /* Red, blue, black matte grey skill colors */
         .skill-item:nth-child(1) {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #dc143c, #8b0000);
             color: white;
-            border: 2px solid #667eea;
+            border: 2px solid #dc143c;
         }
         
         .skill-item:nth-child(2) {
-            background: linear-gradient(135deg, #f093fb, #f5576c);
+            background: linear-gradient(135deg, #003d82, #001f4d);
             color: white;
-            border: 2px solid #f093fb;
+            border: 2px solid #003d82;
         }
         
         .skill-item:nth-child(3) {
-            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
             color: white;
-            border: 2px solid #4facfe;
+            border: 2px solid #2c2c2c;
         }
         
         .skill-item:nth-child(4) {
-            background: linear-gradient(135deg, #43e97b, #38f9d7);
+            background: linear-gradient(135deg, #dc143c, #ff6b6b);
             color: white;
-            border: 2px solid #43e97b;
+            border: 2px solid #dc143c;
         }
         
         .skill-item:nth-child(5) {
-            background: linear-gradient(135deg, #fa709a, #fee140);
+            background: linear-gradient(135deg, #003d82, #4169e1);
             color: white;
-            border: 2px solid #fa709a;
+            border: 2px solid #003d82;
         }
         
         .skill-item:nth-child(6) {
-            background: linear-gradient(135deg, #30cfd0, #330867);
+            background: linear-gradient(135deg, #2c2c2c, #404040);
             color: white;
-            border: 2px solid #30cfd0;
+            border: 2px solid #2c2c2c;
         }
         
         .skill-item:nth-child(n+7) {
-            background: linear-gradient(135deg, #a8edea, #fed6e3);
-            color: #333;
-            border: 2px solid #a8edea;
+            background: linear-gradient(135deg, #dc143c, #003d82);
+            color: white;
+            border: 2px solid #dc143c;
         }
         
         .skill-item::before {
@@ -295,15 +379,15 @@
             box-shadow: 0 8px 25px rgba(0,0,0,0.2);
         }
         
-        /* Colorful about section */
+        /* About section with red, blue, black matte grey theme */
         .about-text {
             font-size: 15px;
             color: #000000e0;
             line-height: 1.6;
-            background: linear-gradient(135deg, #f8f9ff 0%, #e8f0ff 50%, #f5f7ff 100%);
+            background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 50%, #f5f5f5 100%);
             padding: 20px;
             border-radius: 12px;
-            border: 1px solid rgba(102, 126, 234, 0.2);
+            border: 1px solid rgba(220, 20, 60, 0.2);
             position: relative;
             overflow: hidden;
         }
@@ -315,9 +399,9 @@
             left: 0;
             right: 0;
             height: 3px;
-            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe);
+            background: linear-gradient(90deg, #dc143c, #003d82, #2c2c2c, #dc143c, #003d82, #2c2c2c);
             background-size: 200% 100%;
-            animation: rainbow 3s linear infinite;
+            animation: colorShift 3s linear infinite;
         }
         
         /* Mobile responsive design */
@@ -399,16 +483,13 @@
     <!-- Main container for the entire profile -->
     <div class="profile-container">
         
-        <!-- LinkedIn-style header with cover photo -->
-        <header class="header"></header>
-        
-        <!-- Profile section with centered heading -->
-        <div class="profile-section">
-            <div class="profile-info">
-                <h1 class="name">Arfan Ahmad Faiz</h1>
-                <p class="headline">Motivated Student | Swimming Champion | DoFe Award Recipient</p>
+        <!-- Black banner header with name and headline -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="header-name">Arfan Ahmad Faiz</h1>
+                <p class="header-headline">Future Pilot | Academic Excellence | Swimming Champion</p>
             </div>
-        </div>
+        </header>
         
         <!-- About Me section -->
         <section class="section">
@@ -428,7 +509,7 @@
             <div class="item">
                 <h3 class="item-title">
                     <span>Duke of Edinburgh (DoFe) Award</span>
-                    <span class="badge">Completed</span>
+                    <span class="badge completed">Completed</span>
                 </h3>
                 <p class="item-description">
                     Successfully participated in and completed the DoFe program, demonstrating commitment, 
@@ -440,7 +521,7 @@
             <div class="item">
                 <h3 class="item-title">
                     <span>Swimming Competition Achievements</span>
-                    <span class="badge">Sports</span>
+                    <span class="badge sports">Sports</span>
                 </h3>
                 <p class="item-description">
                     • 1st Position - Freestyle 100m<br>
@@ -463,13 +544,45 @@
             </div>
         </section>
         
-        <!-- Hobbies section -->
+        <!-- Career section -->
         <section class="section">
-            <h2 class="section-title">Interests</h2>
-            <div class="skills-grid">
-                <div class="skill-item">Playing Football</div>
-                <div class="skill-item">Swimming</div>
-                <div class="skill-item">Gaming</div>
+            <h2 class="section-title">Career Aspirations</h2>
+            <div class="item">
+                <h3 class="item-title">
+                    <span>Future Pilot</span>
+                    <span class="badge">Dream Career</span>
+                </h3>
+                <p class="item-description">
+                    I aspire to become a pilot in the future. This has been my dream since childhood, 
+                    and I'm working hard to achieve this goal through dedication to my studies and 
+                    personal development.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Education section -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="item">
+                <h3 class="item-title">
+                    <span>IGCSE Board Exams</span>
+                    <span class="badge academic">Academic Excellence</span>
+                </h3>
+                <p class="item-description">
+                    <strong>Grade A*:</strong> Maths, Physics, Economics<br>
+                    <strong>Grade A:</strong> EVM, ICT, English, Business Studies
+                </p>
+            </div>
+            <div class="item">
+                <h3 class="item-title">
+                    <span>Future College Plans</span>
+                    <span class="badge">Goal</span>
+                </h3>
+                <p class="item-description">
+                    I plan to pursue Economics in college, building on my strong foundation from IGCSE 
+                    where I achieved an A* grade. This aligns with my interest in understanding 
+                    global markets, financial systems, and economic policies that shape our world.
+                </p>
             </div>
         </section>
         
