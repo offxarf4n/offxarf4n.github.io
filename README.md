@@ -829,7 +829,6 @@
         
         <!-- Contact section -->
         <section class="section">
-            <h2 class="section-title" onclick="toggleContact()" style="cursor: pointer; user-select: none;">Contact ▼</h2>
             <div class="skills-grid" id="contact-content" style="display: none;">
                 <div class="skill-item">📱 +971 552811077</div>
                 <div class="skill-item">📧 arfanibnfaiz@gmail.com</div>
