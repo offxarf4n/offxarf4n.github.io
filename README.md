@@ -249,6 +249,38 @@
             margin-top: 10px;
         }
 
+        /* Achievement Level Badge Styles */
+        .achievement-level {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .level-gold {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #000000;
+            border: 2px solid #FFD700;
+        }
+
+        .level-silver {
+            background: linear-gradient(135deg, #C0C0C0, #808080);
+            color: #000000;
+            border: 2px solid #C0C0C0;
+        }
+
+        .level-bronze {
+            background: linear-gradient(135deg, #CD7F32, #8B4513);
+            color: #FFFFFF;
+            border: 2px solid #CD7F32;
+        }
+
         /* Achievements Section - Enhanced with better highlighting */
         .achievement-item {
             margin-bottom: 30px;
@@ -540,7 +572,7 @@
         <header class="header">
             <div class="header-content">
                 <h1 class="profile-name">Arfan Ahmad Faiz</h1>
-                <p class="profile-headline">Pilot l Economics l Baller</p>
+                <p class="profile-headline">IGCSE Student l Aspiring Pilot</p>
             </div>
         </header>
 
@@ -571,15 +603,32 @@
             <div id="achievements-content" class="collapsible-content">
                 <!-- Achievement item 1: DoFe Program -->
                 <div class="achievement-item">
+                    <div class="achievement-level level-bronze">Bronze</div>
                     <div class="achievement-title">Duke of Edinburgh's Award</div>
-                    <div class="achievement-description">Successfully participated in and completed the DoFe program</div>
+                    <div class="achievement-description">Currently pursuing the Bronze Award level, developing skills and character</div>
                     <div class="achievement-date">2024</div>
                 </div>
                 <!-- Achievement item 2: Swimming Competition -->
                 <div class="achievement-item">
+                    <div class="achievement-level level-gold">Gold</div>
+                    <div class="achievement-level level-bronze" style="top: 60px;">Bronze</div>
                     <div class="achievement-title">Swimming Championship</div>
-                    <div class="achievement-description">1st position in 100m freestyle, 3rd in relay, 3rd in 100m backstroke</div>
+                    <div class="achievement-description">1st Place in 100m freestyle<br>3rd in Relay 100x4<br>3rd in 100m backstroke</div>
                     <div class="achievement-date">2020-2021</div>
+                </div>
+                <!-- Achievement item 3: Trinity College London -->
+                <div class="achievement-item">
+                    <div class="achievement-level level-gold">Grade 5</div>
+                    <div class="achievement-title">Trinity College London</div>
+                    <div class="achievement-description">Grade 5 in Trinity College London Plays in Production</div>
+                    <div class="achievement-date">2023</div>
+                </div>
+                <!-- Achievement item 4: Football Interhouse -->
+                <div class="achievement-item">
+                    <div class="achievement-level level-bronze">3rd Place</div>
+                    <div class="achievement-title">Football Interhouse</div>
+                    <div class="achievement-description">Achieved bronze in the competitive interhouse football tournament, showcasing athletic ability and team spirit</div>
+                    <div class="achievement-date">2022</div>
                 </div>
             </div>
         </section>
