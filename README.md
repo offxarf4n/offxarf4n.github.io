@@ -1,1295 +1,666 @@
-<!-- Final LinkedIn-style CSS for authentic profile appearance -->
-
-<style>
-
-    /* Import LinkedIn's preferred fonts */
-
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-    
-
-    /* Reset and base styling */
-
-    * {
-
-        margin: 0;
-
-        padding: 0;
-
-        box-sizing: border-box;
-
-    }
-
-    
-
-    body {
-
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-
-        line-height: 1.5;
-
-        background: 
-
-            radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-
-            radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
-
-            linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 25%, #dc143c 50%, #003d82 75%, #1a1a1a 100%);
-
-        background-attachment: fixed;
-
-        color: #000000e0;
-
-        padding: 20px;
-
-        margin: 0;
-
-        position: relative;
-
-    }
-
-    
-
-    body::before {
-
-        content: '';
-
-        position: fixed;
-
-        top: 0;
-
-        left: 0;
-
-        right: 0;
-
-        bottom: 0;
-
-        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><radialGradient id="ballGradient"><stop offset="0%" style="stop-color:white;stop-opacity:0.3"/><stop offset="100%" style="stop-color:white;stop-opacity:0.1"/></radialGradient></defs><circle cx="100" cy="100" r="80" fill="url(%23ballGradient)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/><path d="M100 40 L100 160 M40 100 L160 100" stroke="rgba(255,255,255,0.3)" stroke-width="2"/><path d="M100 40 Q60 100 100 160 Q140 100 100 40" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/><path d="M60 60 L100 40 L140 60 L160 100 L140 140 L100 160 L60 140 L40 100 L60 60" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/><path d="M100 40 L140 60 L100 80 L60 60 L100 40" fill="rgba(255,255,255,0.15)"/><path d="M100 80 L140 100 L100 120 L60 100 L100 80" fill="rgba(255,255,255,0.15)"/><path d="M100 120 L140 140 L100 160 L60 140 L100 120" fill="rgba(255,255,255,0.15)"/><path d="M60 60 L100 80 L60 100 L40 100 L60 60" fill="rgba(255,255,255,0.15)"/><path d="M60 100 L100 120 L60 140 L40 140 L60 100" fill="rgba(255,255,255,0.15)"/></svg>');
-
-        background-size: 300px 300px;
-
-        background-position: center;
-
-        background-repeat: no-repeat;
-
-        opacity: 0.4;
-
-        pointer-events: none;
-
-        z-index: -1;
-
-    }
-
-    
-
-    body::after {
-
-        content: '';
-
-        position: fixed;
-
-        top: 0;
-
-        left: 0;
-
-        right: 0;
-
-        bottom: 0;
-
-        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1200"><defs><linearGradient id="planeGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgba(255,255,255,0.25)"/><stop offset="100%" style="stop-color:rgba(255,255,255,0.08)"/></linearGradient></defs><path d="M100 600 L400 480 L700 420 L1000 400 L1300 420 L1600 480 L1900 600 L1900 900 L1600 880 L1300 860 L1000 840 L700 860 L400 880 L100 900 Z" fill="none" stroke="url(%23planeGradient)" stroke-width="3"/><path d="M700 420 L800 320 L900 260 L1000 240 L1100 260 L1200 320 L1300 420 L1400 520 L1500 620 L1600 720" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M1000 240 L980 180 L970 120 L980 60 L1000 0 L1020 60 L1030 120 L1020 180 L1000 240" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M400 480 L300 380 L250 280 L270 180 L300 80 L400 30 L500 80 L530 180 L550 280 L500 380 L400 480" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M1300 420 L1400 320 L1500 260 L1520 180 L1500 80 L1400 30 L1300 80 L1280 180 L1300 280 L1350 380 L1300 420" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M1000 400 L980 380 L970 360 L980 340 L1000 320 L1020 340 L1030 360 L1020 380 L1000 400" fill="none" stroke="url(%23planeGradient)" stroke-width="1.5"/><circle cx="1000" cy="600" r="20" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M980 600 L960 580 L940 560 L960 540 L980 520" fill="none" stroke="url(%23planeGradient)" stroke-width="1.5"/><path d="M1020 600 L1040 580 L1060 560 L1040 540 L1020 520" fill="none" stroke="url(%23planeGradient)" stroke-width="1.5"/><path d="M1000 620 L1000 660 L1000 720" fill="none" stroke="url(%23planeGradient)" stroke-width="1.5"/></svg>');
-
-        background-size: cover;
-
-        background-position: center;
-
-        background-repeat: no-repeat;
-
-        opacity: 0.6;
-
-        pointer-events: none;
-
-        z-index: -2;
-
-    }
-
-    
-
-    /* Container with red, blue, black matte grey theme */
-
-    .profile-container {
-
-        max-width: 1128px;
-
-        margin: 0 auto;
-
-        background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 50%, #ffffff 100%);
-
-        box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.3), 0 8px 32px rgba(0, 61, 130, 0.2), 0 16px 48px rgba(44, 44, 44, 0.15);
-
-        border-radius: 16px;
-
-        overflow: hidden;
-
-        position: relative;
-
-    }
-
-    
-
-    .profile-container::before {
-
-        content: '';
-
-        position: absolute;
-
-        top: 0;
-
-        left: 0;
-
-        right: 0;
-
-        height: 4px;
-
-        background: linear-gradient(90deg, #dc143c, #003d82, #2c2c2c, #dc143c, #003d82, #2c2c2c);
-
-        background-size: 200% 100%;
-
-        animation: colorShift 3s linear infinite;
-
-    }
-
-    
-
-    @keyframes colorShift {
-
-        0% { background-position: 0% 0%; }
-
-        100% { background-position: 200% 0%; }
-
-    }
-
-    
-
-    /* Black banner header */
-
-    .header {
-
-        position: relative;
-
-        height: 200px;
-
-        background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
-
-        overflow: hidden;
-
-        display: flex;
-
-        align-items: center;
-
-        justify-content: center;
-
-        text-align: center;
-
-    }
-
-    
-
-    .header-content {
-
-        position: relative;
-
-        z-index: 2;
-
-        color: white;
-
-    }
-
-    
-
-    .header-name {
-
-        font-size: 3.5em;
-
-        font-weight: 700;
-
-        margin: 0;
-
-        letter-spacing: -1px;
-
-        text-shadow: 0 4px 8px rgba(0,0,0,0.5);
-
-        background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%);
-
-        -webkit-background-clip: text;
-
-        -webkit-text-fill-color: transparent;
-
-        background-clip: text;
-
-    }
-
-    
-
-    .header-headline {
-
-        font-size: 1.3em;
-
-        margin: 10px 0 0 0;
-
-        font-weight: 400;
-
-        color: rgba(255,255,255,0.9);
-
-        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-
-    }
-
-    
-
-    .header::before {
-
-        content: '';
-
-        position: absolute;
-
-        top: 0;
-
-        left: 0;
-
-        right: 0;
-
-        bottom: 0;
-
-        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200"><defs><pattern id="pattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse"><circle cx="30" cy="30" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="1200" height="200" fill="url(%23pattern)"/></svg>');
-
-        opacity: 0.8;
-
-    }
-
-    
-
-    /* Profile section with centered heading */
-
-    .profile-section {
-
-        position: relative;
-
-        padding: 40px 24px 20px 24px;
-
-        margin-top: -40px;
-
-        text-align: center;
-
-        margin-bottom: 32px;
-
-    }
-
-    
-
-    .profile-info {
-
-        padding-bottom: 16px;
-
-    }
-
-    
-
-    .name {
-
-        font-size: 24px;
-
-        font-weight: 600;
-
-        color: #000000e0;
-
-        margin: 0 0 4px 0;
-
-        line-height: 1.2;
-
-    }
-
-    
-
-    .headline {
-
-        font-size: 16px;
-
-        color: #00000099;
-
-        margin: 0 0 8px 0;
-
-        line-height: 1.4;
-
-    }
-
-    
-
-    /* LinkedIn-style sections */
-
-    .section {
-
-        padding: 24px;
-
-        border-bottom: 1px solid #00000014;
-
-    }
-
-    
-
-    .section:last-child {
-
-        border-bottom: none;
-
-    }
-
-    
-
-    .section-title {
-
-        font-size: 20px;
-
-        font-weight: 600;
-
-        color: #000000e0;
-
-        margin: 0 0 16px 0;
-
-        display: flex;
-
-        align-items: center;
-
-        gap: 8px;
-
-    }
-
-    
-
-    .section-title::before {
-
-        content: '';
-
-        width: 0;
-
-        height: 0;
-
-        border-style: solid;
-
-        border-width: 0 0 8px 8px;
-
-        border-color: transparent transparent #dc143c transparent;
-
-        transform: rotate(-45deg);
-
-    }
-
-    
-
-    /* Cards with red, blue, black matte grey theme */
-
-    .item {
-
-        background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 50%, #f5f5f5 100%);
-
-        border-radius: 12px;
-
-        padding: 16px;
-
-        margin-bottom: 16px;
-
-        transition: all 0.3s ease;
-
-        border: 1px solid rgba(220, 20, 60, 0.1);
-
-        position: relative;
-
-        overflow: hidden;
-
-    }
-
-    
-
-    .item::before {
-
-        content: '';
-
-        position: absolute;
-
-        top: 0;
-
-        left: -100%;
-
-        width: 100%;
-
-        height: 100%;
-
-        background: linear-gradient(90deg, transparent, rgba(220, 20, 60, 0.1), transparent);
-
-        transition: left 0.6s ease;
-
-    }
-
-    
-
-    .item:hover::before {
-
-        left: 100%;
-
-    }
-
-    
-
-    .item:hover {
-
-        background: linear-gradient(135deg, #fff5f5 0%, #f0f0f0 50%, #f5f5f5 100%);
-
-        transform: translateY(-2px);
-
-        box-shadow: 0 8px 25px rgba(220, 20, 60, 0.15);
-
-    }
-
-    
-
-    .item:last-child {
-
-        margin-bottom: 0;
-
-    }
-
-    
-
-    .item-title {
-
-        font-size: 16px;
-
-        font-weight: 600;
-
-        color: #000000e0;
-
-        margin: 0 0 8px 0;
-
-        display: flex;
-
-        align-items: center;
-
-        justify-content: space-between;
-
-    }
-
-    
-
-    .item-title span {
-
-        display: flex;
-
-        align-items: center;
-
-        gap: 8px;
-
-    }
-
-    
-
-    .item-title .badge {
-
-        background-color: #dc143c;
-
-        color: white;
-
-        padding: 2px 8px;
-
-        border-radius: 12px;
-
-        font-size: 12px;
-
-        font-weight: 500;
-
-        position: absolute;
-
-        top: 12px;
-
-        right: 12px;
-
-    }
-
-    
-
-    .item-title .badge.completed {
-
-        background-color: #28a745;
-
-        color: white;
-
-        padding: 2px 8px;
-
-        border-radius: 12px;
-
-        font-size: 12px;
-
-        font-weight: 500;
-
-        position: absolute;
-
-        top: 12px;
-
-        right: 12px;
-
-    }
-
-    
-
-    .item-title .badge.academic {
-
-        background-color: #28a745;
-
-        color: white;
-
-        padding: 2px 8px;
-
-        border-radius: 12px;
-
-        font-size: 12px;
-
-        font-weight: 500;
-
-        position: absolute;
-
-        top: 12px;
-
-        right: 12px;
-
-    }
-
-    
-
-    .item-title .badge.sports {
-
-        background-color: #ffd700;
-
-        color: #333;
-
-        padding: 2px 8px;
-
-        border-radius: 12px;
-
-        font-size: 12px;
-
-        font-weight: 500;
-
-        position: absolute;
-
-        top: 12px;
-
-        right: 12px;
-
-    }
-
-    
-
-    .item-description {
-
-        font-size: 14px;
-
-        color: #00000099;
-
-        line-height: 1.6;
-
-        margin: 0;
-
-    }
-
-    
-
-    /* Vibrant skills with rainbow colors */
-
-    .skills-grid {
-
-        display: flex;
-
-        flex-wrap: wrap;
-
-        gap: 10px;
-
-        margin-top: 16px;
-
-    }
-
-    
-
-    .skill-item {
-
-        padding: 8px 16px;
-
-        border-radius: 20px;
-
-        font-size: 14px;
-
-        font-weight: 600;
-
-        transition: all 0.3s ease;
-
-        cursor: default;
-
-        position: relative;
-
-        overflow: hidden;
-
-        text-transform: uppercase;
-
-        letter-spacing: 0.5px;
-
-    }
-
-    
-
-    /* Red, blue, black matte grey skill colors */
-
-    .skill-item:nth-child(1) {
-
-        background: linear-gradient(135deg, #dc143c, #8b0000);
-
-        color: white;
-
-        border: 2px solid #8b0000;
-
-    }
-
-    
-
-    .skill-item:nth-child(2) {
-
-        background: linear-gradient(135deg, #003d82, #001f4d);
-
-        color: white;
-
-        border: 2px solid #001f4d;
-
-    }
-
-    
-
-    .skill-item:nth-child(3) {
-
-        background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
-
-        color: white;
-
-        border: 2px solid #1a1a1a;
-
-    }
-
-    
-
-    .skill-item:nth-child(4) {
-
-        background: linear-gradient(135deg, #8b0000, #dc143c);
-
-        color: white;
-
-        border: 2px solid #660000;
-
-    }
-
-    
-
-    .skill-item:nth-child(5) {
-
-        background: linear-gradient(135deg, #003d82, #4169e1);
-
-        color: white;
-
-        border: 2px solid #001f4d;
-
-    }
-
-    
-
-    .skill-item:nth-child(6) {
-
-        background: linear-gradient(135deg, #2c2c2c, #404040);
-
-        color: white;
-
-        border: 2px solid #1a1a1a;
-
-    }
-
-    
-
-    .skill-item:nth-child(n+7) {
-
-        background: linear-gradient(135deg, #dc143c, #003d82);
-
-        color: white;
-
-        border: 2px solid #8b0000;
-
-    }
-
-    
-
-    .skill-item::before {
-
-        content: '';
-
-        position: absolute;
-
-        top: 0;
-
-        left: -100%;
-
-        width: 100%;
-
-        height: 100%;
-
-        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-
-        transition: left 0.5s ease;
-
-    }
-
-    
-
-    .skill-item:hover::before {
-
-        left: 100%;
-
-    }
-
-    
-
-    .skill-item:hover {
-
-        transform: translateY(-3px) scale(1.1);
-
-        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-
-    }
-
-    
-
-    /* About section with red, blue, black matte grey theme */
-
-    .about-text {
-
-        font-size: 15px;
-
-        color: #000000e0;
-
-        line-height: 1.6;
-
-        background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 50%, #f5f5f5 100%);
-
-        padding: 20px;
-
-        border-radius: 12px;
-
-        border: 1px solid rgba(220, 20, 60, 0.2);
-
-        position: relative;
-
-        overflow: hidden;
-
-    }
-
-    
-
-    .about-text::before {
-
-        content: '';
-
-        position: absolute;
-
-        top: 0;
-
-        left: 0;
-
-        right: 0;
-
-        height: 3px;
-
-        background: linear-gradient(90deg, #dc143c, #003d82, #2c2c2c, #dc143c, #003d82, #2c2c2c);
-
-        background-size: 200% 100%;
-
-        animation: colorShift 3s linear infinite;
-
-    }
-
-    
-
-    /* Mobile responsive design */
-
-    @media (max-width: 768px) {
-
-        .profile-container {
-
-            border-radius: 0;
-
-            box-shadow: none;
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arfan Ahmad Faiz - LinkedIn Profile</title>
+    <style>
+        /* Color Palette Variables */
+        :root {
+            --black-bg: #000000;
+            --light-blue: #0061b1;
+            --dark-blue: #2B115A;
+            --red: #F11A22;
+            --white-text: #ffffff;
+            --light-gray-text: #cccccc;
+            --medium-gray-text: #999999;
         }
 
-        
-
-        .header {
-
-            height: 120px;
-
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        
+        /* Modern Font and Body Styles */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--black-bg);
+            color: var(--white-text);
+            line-height: 1.6;
+            /* Good spacing and centering */
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
 
-        .profile-section {
+        /* Center container with good spacing */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            /* Center the content */
+        }
 
-            flex-direction: column;
+        /* Navigation Menu Styles */
+        .navigation {
+            background: rgba(43, 17, 90, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 97, 177, 0.3);
+            border-radius: 15px;
+            padding: 15px 0;
+            margin-bottom: 30px;
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
 
+        .nav-content {
+            display: flex;
+            justify-content: center;
             align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
 
+        .nav-link {
+            color: var(--white-text);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.8rem;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            background: rgba(0, 97, 177, 0.2);
+            border: 1px solid rgba(0, 97, 177, 0.3);
+        }
+
+        .nav-link:hover {
+            background: var(--light-blue);
+            color: var(--white-text);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 97, 177, 0.4);
+        }
+
+        /* Header Styles - Enhanced with more visual impact */
+        .header {
+            background: linear-gradient(135deg, var(--light-blue) 0%, var(--dark-blue) 50%, #1a0f3d 100%);
+            color: var(--white-text);
+            padding: 60px 40px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 15px 50px rgba(0, 97, 177, 0.4), 0 5px 20px rgba(0, 0, 0, 0.3);
             text-align: center;
-
-            padding: 0 16px;
-
-            margin-top: -60px;
-
-            gap: 16px;
-
+            position: relative;
+            overflow: hidden;
         }
 
-        
-
-        .profile-image {
-
-            width: 120px;
-
-            height: 120px;
-
+        /* Add animated background effect */
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            animation: float 20s linear infinite;
         }
 
-        
-
-        .profile-info {
-
-            padding-bottom: 0;
-
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(-50px, -50px) rotate(360deg); }
         }
 
-        
+        .header-content {
+            max-width: 100%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
 
+        .profile-name {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3.2rem;
+            font-weight: 800;
+            font-style: italic;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-headline {
+            font-family: 'Pilot', 'Economic', 'Baller', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            opacity: 0.95;
+            color: rgba(255, 255, 255, 0.95);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Section Styles - Enhanced card design */
         .section {
-
-            padding: 16px;
-
+            background: rgba(43, 17, 90, 0.85);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 97, 177, 0.4);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 35px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 2px 10px rgba(0, 97, 177, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
         }
 
-        
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--light-blue), var(--red));
+            border-radius: 20px 20px 0 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .section:hover::before {
+            opacity: 1;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6), 0 5px 20px rgba(0, 97, 177, 0.3);
+        }
 
         .section-title {
-
-            font-size: 18px;
-
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--white-text);
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid transparent;
+            background: linear-gradient(90deg, var(--light-blue), var(--red)) bottom;
+            background-size: 100% 3px;
+            background-repeat: no-repeat;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
 
-        
-
-        .item {
-
-            padding: 12px;
-
+        /* Add icon indicators to section titles */
+        .section-title::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--light-blue);
+            border-radius: 50%;
+            box-shadow: 0 0 20px var(--light-blue);
+            animation: pulse 2s infinite;
         }
 
-        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.2); }
+        }
 
+        /* About Section */
+        .about-content {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--light-gray-text);
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+        }
+
+        .about-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Subheading and Sub-subheading Styles */
+        .subheading {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--light-blue);
+            margin: 30px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(0, 97, 177, 0.3);
+        }
+
+        .sub-subheading {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: var(--white-text);
+            margin: 20px 0 15px 0;
+            padding-left: 15px;
+            border-left: 3px solid var(--light-blue);
+        }
+
+        .studies-content {
+            margin-top: 15px;
+        }
+
+        .grades-content {
+            margin-top: 10px;
+        }
+
+        /* Achievements Section - Enhanced with better highlighting */
+        .achievement-item {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, rgba(0, 97, 177, 0.15) 0%, rgba(0, 97, 177, 0.05) 100%);
+            border-radius: 15px;
+            border-left: 5px solid var(--light-blue);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .achievement-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle, var(--light-blue) 0%, transparent 70%);
+            opacity: 0.1;
+            border-radius: 50%;
+            transform: translate(20px, -20px);
+        }
+
+        .achievement-item:hover {
+            background: linear-gradient(135deg, rgba(0, 97, 177, 0.25) 0%, rgba(0, 97, 177, 0.1) 100%);
+            transform: translateX(10px) scale(1.02);
+            box-shadow: 0 8px 30px rgba(0, 97, 177, 0.3);
+        }
+
+        .achievement-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .achievement-title {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--white-text);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .achievement-title::before {
+            content: '🏆';
+            font-size: 1.2rem;
+        }
+
+        .achievement-description {
+            color: var(--light-gray-text);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .achievement-date {
+            color: var(--medium-gray-text);
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-top: 10px;
+            display: inline-block;
+            background: rgba(0, 97, 177, 0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 97, 177, 0.3);
+        }
+
+        /* Skills Section - Enhanced tag-style design */
         .skills-grid {
-
-            gap: 6px;
-
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
         }
-
-        
 
         .skill-item {
-
-            padding: 4px 10px;
-
-            font-size: 13px;
-
+            background: linear-gradient(135deg, rgba(0, 97, 177, 0.2) 0%, rgba(0, 97, 177, 0.1) 100%);
+            border: 2px solid rgba(0, 97, 177, 0.4);
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--white-text);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.9rem;
+            position: relative;
+            overflow: hidden;
+            cursor: default;
         }
 
-    }
-
-    
-
-    @media (max-width: 480px) {
-
-        .header {
-
-            height: 100px;
-
+        .skill-item::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: radial-gradient(circle, var(--light-blue) 0%, transparent 70%);
+            transition: all 0.4s ease;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
         }
 
-        
-
-        .profile-section {
-
-            padding: 0 12px;
-
+        .skill-item:hover {
+            background: linear-gradient(135deg, var(--light-blue) 0%, rgba(0, 97, 177, 0.8) 100%);
+            color: var(--white-text);
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 97, 177, 0.5);
+            border-color: var(--light-blue);
         }
 
-        
+        .skill-item:hover::before {
+            width: 100%;
+            height: 100%;
+        }
 
+        /* Hobbies Section - Enhanced with modern styling */
+        .hobbies-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .hobby-item {
+            background: linear-gradient(135deg, var(--red) 0%, rgba(241, 26, 34, 0.8) 100%);
+            color: var(--white-text);
+            padding: 12px 22px;
+            border-radius: 25px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(241, 26, 34, 0.3);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.9rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hobby-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .hobby-item:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(241, 26, 34, 0.5);
+        }
+
+        .hobby-item:hover::before {
+            left: 100%;
+        }
+
+        /* Responsive Design - Enhanced for better mobile experience */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            .header {
+                padding: 40px 25px;
+                margin-bottom: 35px;
+            }
+
+            .profile-name {
+                font-size: 2.5rem;
+            }
+
+            .profile-headline {
+                font-size: 1.1rem;
+            }
+
+            .section {
+                padding: 30px 25px;
+                margin-bottom: 30px;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+                margin-bottom: 25px;
+            }
+
+            .achievement-item {
+                padding: 20px;
+                margin-bottom: 25px;
+            }
+
+            .achievement-title {
+                font-size: 1.1rem;
+            }
+
+            .skills-grid {
+                gap: 12px;
+            }
+
+            .skill-item {
+                padding: 10px 16px;
+                font-size: 0.85rem;
+            }
+
+            .hobbies-list {
+                gap: 12px;
+            }
+
+            .hobby-item {
+                padding: 10px 18px;
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Collapsible content styles */
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .collapsible-content.expanded {
+            max-height: 1000px;
+        }
+
+        /* Clickable section titles */
+        .clickable-title {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            user-select: none;
+        }
+
+        .clickable-title:hover {
+            color: var(--light-blue);
+            transform: translateX(5px);
+        }
+
+        .clickable-title::after {
+            content: ' ▼';
+            font-size: 0.8rem;
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .clickable-title.collapsed::after {
+            transform: rotate(-90deg);
+        }
+
+        /* Smooth scrolling and additional polish */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Add subtle animation to page load */
         .section {
-
-            padding: 12px;
-
+            animation: fadeInUp 0.6s ease-out;
         }
 
-        
-
-        .name {
-
-            font-size: 20px;
-
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Menu -->
+        <nav class="navigation">
+            <div class="nav-content">
+                <a href="#about" class="nav-link">About Me</a>
+                <a href="#studies" class="nav-link">Studies</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#skills" class="nav-link">Soft Skills</a>
+                <a href="#hard-skills" class="nav-link">Hard Skills</a>
+                <a href="#hobbies" class="nav-link">Hobbies</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
 
-        
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="profile-name">Arfan Ahmad Faiz</h1>
+                <p class="profile-headline">Pilot l Economics l Baller</p>
+            </div>
+        </header>
 
-        .headline {
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>My name is Arfan Ahmad and I am currently studying in Gems New Millennium School (GNMS). I am currently pursuing Economics, Math and Physics. My future plan is to get into an Aviation training course for pilot. It has been a dream for me to become a Pilot as its such a nice job since you are getting paid to travel around the world while landing the people who comes to visit the places. I want to pursue economics as my major as it a good stream and has many door to do different types of jobs with economics.</p>
+            </div>
+        </section>
 
-            font-size: 14px;
+        <!-- Studies Section -->
+        <section id="studies" class="section">
+            <h2 class="section-title">Studies</h2>
+            <div class="studies-content">
+                <!-- Grades Subheading -->
+                <h3 class="subheading">Grades for IGCSE Board Exams</h3>
+                <div class="grades-content">
+                    <p><strong>A*:</strong> Physics, Maths, Economics</p>
+                    <p><strong>A:</strong> EVM, Business Studies</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <h2 class="section-title clickable-title collapsed" onclick="toggleSection('achievements-content', this)">Achievements</h2>
+            <div id="achievements-content" class="collapsible-content">
+                <!-- Achievement item 1: DoFe Program -->
+                <div class="achievement-item">
+                    <div class="achievement-title">Duke of Edinburgh's Award</div>
+                    <div class="achievement-description">Successfully participated in and completed the DoFe program</div>
+                    <div class="achievement-date">2024</div>
+                </div>
+                <!-- Achievement item 2: Swimming Competition -->
+                <div class="achievement-item">
+                    <div class="achievement-title">Swimming Championship</div>
+                    <div class="achievement-description">1st position in 100m freestyle, 3rd in relay, 3rd in 100m backstroke</div>
+                    <div class="achievement-date">2020-2021</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Soft Skills</h2>
+            <div class="skills-grid">
+                <!-- Skill item 1: Communication -->
+                <div class="skill-item">Communication</div>
+                <!-- Skill item 2: Teamwork -->
+                <div class="skill-item">Teamwork</div>
+                <!-- Skill item 3: Problem Solving -->
+                <div class="skill-item">Problem Solving</div>
+                <!-- Skill item 4: Creative Thinking -->
+                <div class="skill-item">Creative Thinking</div>
+                <!-- Skill item 5: Self Awareness -->
+                <div class="skill-item">Self Awareness</div>
+                <!-- Skill item 6: Time Management -->
+                <div class="skill-item">Time Management</div>
+                <!-- Skill item 7: Adaptability -->
+                <div class="skill-item">Adaptability</div>
+            </div>
+        </section>
+
+        <!-- Hard Skills Section -->
+        <section id="hard-skills" class="section">
+            <h2 class="section-title">Hard Skills</h2>
+            <div class="skills-grid">
+                <!-- Hard Skill item 1: Money Management -->
+                <div class="skill-item">Money Management</div>
+                <!-- Hard Skill item 2: Cooking -->
+                <div class="skill-item">Cooking</div>
+                <!-- Hard Skill item 3: Basic Repairs -->
+                <div class="skill-item">Basic Repairs</div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="section">
+            <h2 class="section-title">Hobbies</h2>
+            <div class="hobbies-list">
+                <!-- Hobby item 1: Football -->
+                <div class="hobby-item">Football</div>
+                <!-- Hobby item 2: Swimming -->
+                <div class="hobby-item">Swimming</div>
+                <!-- Hobby item 3: Gaming -->
+                <div class="hobby-item">Gaming</div>
+                <!-- Hobby item 4: Chess -->
+                <div class="hobby-item">Chess</div>
+                <!-- Hobby item 5: Cycling -->
+                <div class="hobby-item">Cycling</div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title clickable-title collapsed" onclick="toggleSection('contact-content', this)">Contact</h2>
+            <div id="contact-content" class="collapsible-content">
+                <div class="contact-content">
+                    <p><strong>Phone:</strong> +971 552811077</p>
+                    <p><strong>Gmail:</strong> arfaibnfaiz@gmail.com</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        // Toggle collapse/expand functionality for clickable titles
+        function toggleSection(sectionId, titleElement) {
+            const section = document.getElementById(sectionId);
+            const isCollapsed = titleElement.classList.contains('collapsed');
+            
+            if (isCollapsed) {
+                section.classList.add('expanded');
+                titleElement.classList.remove('collapsed');
+            } else {
+                section.classList.remove('expanded');
+                titleElement.classList.add('collapsed');
+            }
         }
-
-    }
-
-    
-
-    /* Dynamic theme island styling */
-
-    .theme-island {
-
-        position: fixed;
-
-        top: 20px;
-
-        right: 20px;
-
-        z-index: 1000;
-
-        background: rgba(255,255,255,0.95);
-
-        backdrop-filter: blur(10px);
-
-        border-radius: 20px;
-
-        padding: 8px;
-
-        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-
-        border: 1px solid rgba(255,255,255,0.2);
-
-        transition: all 0.3s ease;
-
-        display: flex;
-
-        align-items: center;
-
-        gap: 8px;
-
-    }
-
-    
-
-    .theme-option {
-
-        background: rgba(255,255,255,0.2);
-
-        border: 2px solid rgba(255,255,255,0.3);
-
-        border-radius: 50%;
-
-        width: 40px;
-
-        height: 40px;
-
-        font-size: 18px;
-
-        cursor: pointer;
-
-        transition: all 0.3s ease;
-
-        position: relative;
-
-        overflow: hidden;
-
-    }
-
-    
-
-    .theme-option:hover {
-
-        background: rgba(255,255,255,0.3);
-
-        transform: scale(1.1);
-
-    }
-
-    
-
-    .theme-option::before {
-
-        content: '';
-
-        position: absolute;
-
-        top: 0;
-
-        left: -100%;
-
-        width: 100%;
-
-        height: 100%;
-
-        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-
-        transition: left 0.5s ease;
-
-    }
-
-    
-
-    .theme-option:hover::before {
-
-        left: 100%;
-
-    }
-
-    
-
-    /* Dark mode theme island */
-
-    body.dark-mode .theme-island {
-
-        background: rgba(0,0,0,0.95);
-
-        border: 1px solid rgba(255,255,255,0.1);
-
-    }
-
-    
-
-    body.dark-mode .theme-option {
-
-        background: rgba(0,0,0,0.2);
-
-        border: 2px solid rgba(255,255,255,0.1);
-
-    }
-
-    
-
-    body.dark-mode .theme-option:hover {
-
-        background: rgba(0,0,0,0.3);
-
-    }
-
-    
-
-    /* Theme toggle button styling */
-
-    .theme-toggle {
-
-        position: absolute;
-
-        top: 20px;
-
-        right: 20px;
-
-        z-index: 10;
-
-    }
-
-    
-
-    .theme-btn {
-
-        background: rgba(255,255,255,0.2);
-
-        border: 2px solid rgba(255,255,255,0.3);
-
-        border-radius: 50%;
-
-        width: 40px;
-
-        height: 40px;
-
-        font-size: 18px;
-
-        cursor: pointer;
-
-        transition: all 0.3s ease;
-
-    }
-
-    
-
-    .theme-btn:hover {
-
-        background: rgba(255,255,255,0.3);
-
-        transform: scale(1.1);
-
-    }
-
-    
-
-    /* Dark mode styles */
-
-    body.dark-mode {
-
-        background: 
-
-            radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
-
-            radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
-
-            linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 25%, #2c2c2c 50%, #1a1a1a 75%, #0a0a0a 100%);
-
-        color: #ffffffe0;
-
-    }
-
-    
-
-    body.dark-mode .profile-container {
-
-        background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 50%, #1a1a1a 100%);
-
-        box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.2), 0 8px 32px rgba(0, 61, 130, 0.1), 0 16px 48px rgba(44, 44, 44, 0.1);
-
-    }
-
-    
-
-    body.dark-mode .item {
-
-        background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 50%, #2c2c2c 100%);
-
-        border: 1px solid rgba(220, 20, 60, 0.2);
-
-    }
-
-    
-
-    body.dark-mode .item:hover {
-
-        background: linear-gradient(135deg, #3c3c3c 0%, #2a2a2a 50%, #3c3c3c 100%);
-
-        box-shadow: 0 8px 25px rgba(220, 20, 60, 0.1);
-
-    }
-
-    
-
-    body.dark-mode .about-text {
-
-        background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 50%, #2c2c2c 100%);
-
-        border: 1px solid rgba(220, 20, 60, 0.2);
-
-        color: #ffffff99;
-
-    }
-
-    
-
-    body.dark-mode .section-title {
-
-        color: #ffffffe0;
-
-    }
-
-    
-
-    body.dark-mode .section-title::before {
-
-        border-color: transparent transparent #dc143c transparent;
-
-    }
-
-    
-
-    body.dark-mode .item-title {
-
-        color: #ffffffe0;
-
-    }
-
-    
-
-    body.dark-mode .item-description {
-
-        color: #ffffff99;
-
-    }
-
-    
-
-    body.dark-mode .header {
-
-        background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
-
-    }
-
-    
-
-    body.dark-mode .header-name {
-
-        background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%);
-
-        -webkit-background-clip: text;
-
-        -webkit-text-fill-color: transparent;
-
-        background-clip: text;
-
-    }
-
-    
-
-    body.dark-mode .header-headline {
-
-        color: rgba(255,255,255,0.8);
-
-    }
-
-    
-
-    body.dark-mode .theme-btn {
-
-        background: rgba(0,0,0,0.2);
-
-        border: 2px solid rgba(255,255,255,0.3);
-
-    }
-
-    
-
-    body.dark-mode .theme-btn:hover {
-
-        background: rgba(0,0,0,0.3);
-
-    }
-
-    
-
-    /* Smooth transitions for all interactive elements */
-
-    * {
-
-        transition: color 0.2s ease, background-color 0.2s ease;
-
-    }
-
-</style>
+    </script>
+</body>
+</html>
