@@ -83,38 +83,55 @@
 
         /* Header Styles - Enhanced with more visual impact */
         .header {
-            background: linear-gradient(135deg, var(--light-blue) 0%, var(--dark-blue) 50%, #1a0f3d 100%);
-            color: var(--white-text);
-            padding: 60px 40px;
-            border-radius: 20px;
-            margin-bottom: 50px;
-            box-shadow: 0 15px 50px rgba(0, 97, 177, 0.4), 0 5px 20px rgba(0, 0, 0, 0.3);
             text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--black-bg) 50%, var(--dark-blue) 100%);
             position: relative;
             overflow: hidden;
         }
 
-        /* Add animated background effect */
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--light-blue);
+            box-shadow: 0 8px 25px rgba(0, 97, 177, 0.4);
+            object-fit: cover;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-picture:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 97, 177, 0.6);
+        }
+
+        .header-text {
+            text-align: left;
+        }
+
         .header::before {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
-            background-size: 20px 20px;
-            animation: float 20s linear infinite;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(0, 97, 177, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 50%, rgba(43, 17, 90, 0.1) 0%, transparent 50%);
+            animation: headerGlow 8s ease-in-out infinite alternate;
         }
 
-        @keyframes float {
-            0% { transform: translate(0, 0) rotate(0deg); }
-            100% { transform: translate(-50px, -50px) rotate(360deg); }
-        }
-
-        .header-content {
-            max-width: 100%;
-            margin: 0 auto;
+        @keyframes headerGlow {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
             position: relative;
             z-index: 1;
         }
@@ -571,8 +588,11 @@
         <!-- Header Section -->
         <header class="header">
             <div class="header-content">
-                <h1 class="profile-name">Arfan Ahmad Faiz</h1>
-                <p class="profile-headline">IGCSE Student l Aspiring Pilot</p>
+                <img src="file:///C:/Users/f.makkar/CascadeProjects/linkedin-profile/Arfan.png" alt="Arfan Ahmad Faiz" class="profile-picture">
+                <div class="header-text">
+                    <h1 class="profile-name">Arfan Ahmad Faiz</h1>
+                    <p class="profile-headline">IGCSE Stuent l Aspiring Pilot</p>
+                </div>
             </div>
         </header>
 
