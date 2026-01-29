@@ -1,348 +1,1295 @@
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h1 class="hero-title">Clean Air, Clean Planet</h1>
-        <p class="hero-subtitle">SDG 13 & SDG 3 in Action</p>
-        <p class="hero-description">
-            Join the movement to combat air pollution and protect our climate and health. 
-            Together, we can create a sustainable future for generations to come.
-        </p>
-        <div class="hero-buttons">
-            <a href="#action" class="btn btn-primary">Take Action Now</a>
-            <a href="#about" class="btn btn-secondary">Learn More</a>
-        </div>
-    </div>
-    <div class="hero-visual">
-        <div class="air-quality-indicator">
-            <div class="aqi-value">150</div>
-            <div class="aqi-label">Current AQI</div>
-            <div class="aqi-status unhealthy">Unhealthy</div>
-        </div>
-    </div>
-</section>
+<!-- Final LinkedIn-style CSS for authentic profile appearance -->
 
-<!-- About Section -->
-<section id="about" class="about">
-    <div class="container">
-        <h2 class="section-title">Understanding the Crisis</h2>
-        <div class="about-grid">
-            <div class="about-card">
-                <i class="fas fa-smog"></i>
-                <h3>Air Pollution Reality</h3>
-                <p>9 out of 10 people breathe air containing high levels of pollutants, causing 7 million premature deaths annually.</p>
-            </div>
-            <div class="about-card">
-                <i class="fas fa-temperature-high"></i>
-                <h3>Climate Change Impact</h3>
-                <p>Air pollution contributes significantly to global warming, threatening ecosystems and communities worldwide.</p>
-            </div>
-            <div class="about-card">
-                <i class="fas fa-heartbeat"></i>
-                <h3>Health Consequences</h3>
-                <p>Polluted air causes respiratory diseases, heart problems, and reduces life expectancy by up to 2 years.</p>
-            </div>
-        </div>
-    </div>
-</section>
+<style>
 
-<!-- SDG 13 Section -->
-<section id="sdg13" class="sdg-section sdg13">
-    <div class="container">
-        <div class="sdg-header">
-            <div class="sdg-logo">
-                <span class="sdg-number">13</span>
-                <span class="sdg-text">CLIMATE ACTION</span>
-            </div>
-            <h2 class="section-title">SDG 13: Climate Action</h2>
-            <p class="sdg-description">
-                Take urgent action to combat climate change and its impacts through reduced air pollution and sustainable practices.
-            </p>
-        </div>
+    /* Import LinkedIn's preferred fonts */
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    
+
+    /* Reset and base styling */
+
+    * {
+
+        margin: 0;
+
+        padding: 0;
+
+        box-sizing: border-box;
+
+    }
+
+    
+
+    body {
+
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+        line-height: 1.5;
+
+        background: 
+
+            radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+
+            radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+
+            linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 25%, #dc143c 50%, #003d82 75%, #1a1a1a 100%);
+
+        background-attachment: fixed;
+
+        color: #000000e0;
+
+        padding: 20px;
+
+        margin: 0;
+
+        position: relative;
+
+    }
+
+    
+
+    body::before {
+
+        content: '';
+
+        position: fixed;
+
+        top: 0;
+
+        left: 0;
+
+        right: 0;
+
+        bottom: 0;
+
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><radialGradient id="ballGradient"><stop offset="0%" style="stop-color:white;stop-opacity:0.3"/><stop offset="100%" style="stop-color:white;stop-opacity:0.1"/></radialGradient></defs><circle cx="100" cy="100" r="80" fill="url(%23ballGradient)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/><path d="M100 40 L100 160 M40 100 L160 100" stroke="rgba(255,255,255,0.3)" stroke-width="2"/><path d="M100 40 Q60 100 100 160 Q140 100 100 40" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/><path d="M60 60 L100 40 L140 60 L160 100 L140 140 L100 160 L60 140 L40 100 L60 60" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/><path d="M100 40 L140 60 L100 80 L60 60 L100 40" fill="rgba(255,255,255,0.15)"/><path d="M100 80 L140 100 L100 120 L60 100 L100 80" fill="rgba(255,255,255,0.15)"/><path d="M100 120 L140 140 L100 160 L60 140 L100 120" fill="rgba(255,255,255,0.15)"/><path d="M60 60 L100 80 L60 100 L40 100 L60 60" fill="rgba(255,255,255,0.15)"/><path d="M60 100 L100 120 L60 140 L40 140 L60 100" fill="rgba(255,255,255,0.15)"/></svg>');
+
+        background-size: 300px 300px;
+
+        background-position: center;
+
+        background-repeat: no-repeat;
+
+        opacity: 0.4;
+
+        pointer-events: none;
+
+        z-index: -1;
+
+    }
+
+    
+
+    body::after {
+
+        content: '';
+
+        position: fixed;
+
+        top: 0;
+
+        left: 0;
+
+        right: 0;
+
+        bottom: 0;
+
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1200"><defs><linearGradient id="planeGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgba(255,255,255,0.25)"/><stop offset="100%" style="stop-color:rgba(255,255,255,0.08)"/></linearGradient></defs><path d="M100 600 L400 480 L700 420 L1000 400 L1300 420 L1600 480 L1900 600 L1900 900 L1600 880 L1300 860 L1000 840 L700 860 L400 880 L100 900 Z" fill="none" stroke="url(%23planeGradient)" stroke-width="3"/><path d="M700 420 L800 320 L900 260 L1000 240 L1100 260 L1200 320 L1300 420 L1400 520 L1500 620 L1600 720" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M1000 240 L980 180 L970 120 L980 60 L1000 0 L1020 60 L1030 120 L1020 180 L1000 240" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M400 480 L300 380 L250 280 L270 180 L300 80 L400 30 L500 80 L530 180 L550 280 L500 380 L400 480" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M1300 420 L1400 320 L1500 260 L1520 180 L1500 80 L1400 30 L1300 80 L1280 180 L1300 280 L1350 380 L1300 420" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M1000 400 L980 380 L970 360 L980 340 L1000 320 L1020 340 L1030 360 L1020 380 L1000 400" fill="none" stroke="url(%23planeGradient)" stroke-width="1.5"/><circle cx="1000" cy="600" r="20" fill="none" stroke="url(%23planeGradient)" stroke-width="2"/><path d="M980 600 L960 580 L940 560 L960 540 L980 520" fill="none" stroke="url(%23planeGradient)" stroke-width="1.5"/><path d="M1020 600 L1040 580 L1060 560 L1040 540 L1020 520" fill="none" stroke="url(%23planeGradient)" stroke-width="1.5"/><path d="M1000 620 L1000 660 L1000 720" fill="none" stroke="url(%23planeGradient)" stroke-width="1.5"/></svg>');
+
+        background-size: cover;
+
+        background-position: center;
+
+        background-repeat: no-repeat;
+
+        opacity: 0.6;
+
+        pointer-events: none;
+
+        z-index: -2;
+
+    }
+
+    
+
+    /* Container with red, blue, black matte grey theme */
+
+    .profile-container {
+
+        max-width: 1128px;
+
+        margin: 0 auto;
+
+        background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 50%, #ffffff 100%);
+
+        box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.3), 0 8px 32px rgba(0, 61, 130, 0.2), 0 16px 48px rgba(44, 44, 44, 0.15);
+
+        border-radius: 16px;
+
+        overflow: hidden;
+
+        position: relative;
+
+    }
+
+    
+
+    .profile-container::before {
+
+        content: '';
+
+        position: absolute;
+
+        top: 0;
+
+        left: 0;
+
+        right: 0;
+
+        height: 4px;
+
+        background: linear-gradient(90deg, #dc143c, #003d82, #2c2c2c, #dc143c, #003d82, #2c2c2c);
+
+        background-size: 200% 100%;
+
+        animation: colorShift 3s linear infinite;
+
+    }
+
+    
+
+    @keyframes colorShift {
+
+        0% { background-position: 0% 0%; }
+
+        100% { background-position: 200% 0%; }
+
+    }
+
+    
+
+    /* Black banner header */
+
+    .header {
+
+        position: relative;
+
+        height: 200px;
+
+        background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+
+        overflow: hidden;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        text-align: center;
+
+    }
+
+    
+
+    .header-content {
+
+        position: relative;
+
+        z-index: 2;
+
+        color: white;
+
+    }
+
+    
+
+    .header-name {
+
+        font-size: 3.5em;
+
+        font-weight: 700;
+
+        margin: 0;
+
+        letter-spacing: -1px;
+
+        text-shadow: 0 4px 8px rgba(0,0,0,0.5);
+
+        background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%);
+
+        -webkit-background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+
+        background-clip: text;
+
+    }
+
+    
+
+    .header-headline {
+
+        font-size: 1.3em;
+
+        margin: 10px 0 0 0;
+
+        font-weight: 400;
+
+        color: rgba(255,255,255,0.9);
+
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+
+    }
+
+    
+
+    .header::before {
+
+        content: '';
+
+        position: absolute;
+
+        top: 0;
+
+        left: 0;
+
+        right: 0;
+
+        bottom: 0;
+
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200"><defs><pattern id="pattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse"><circle cx="30" cy="30" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="1200" height="200" fill="url(%23pattern)"/></svg>');
+
+        opacity: 0.8;
+
+    }
+
+    
+
+    /* Profile section with centered heading */
+
+    .profile-section {
+
+        position: relative;
+
+        padding: 40px 24px 20px 24px;
+
+        margin-top: -40px;
+
+        text-align: center;
+
+        margin-bottom: 32px;
+
+    }
+
+    
+
+    .profile-info {
+
+        padding-bottom: 16px;
+
+    }
+
+    
+
+    .name {
+
+        font-size: 24px;
+
+        font-weight: 600;
+
+        color: #000000e0;
+
+        margin: 0 0 4px 0;
+
+        line-height: 1.2;
+
+    }
+
+    
+
+    .headline {
+
+        font-size: 16px;
+
+        color: #00000099;
+
+        margin: 0 0 8px 0;
+
+        line-height: 1.4;
+
+    }
+
+    
+
+    /* LinkedIn-style sections */
+
+    .section {
+
+        padding: 24px;
+
+        border-bottom: 1px solid #00000014;
+
+    }
+
+    
+
+    .section:last-child {
+
+        border-bottom: none;
+
+    }
+
+    
+
+    .section-title {
+
+        font-size: 20px;
+
+        font-weight: 600;
+
+        color: #000000e0;
+
+        margin: 0 0 16px 0;
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 8px;
+
+    }
+
+    
+
+    .section-title::before {
+
+        content: '';
+
+        width: 0;
+
+        height: 0;
+
+        border-style: solid;
+
+        border-width: 0 0 8px 8px;
+
+        border-color: transparent transparent #dc143c transparent;
+
+        transform: rotate(-45deg);
+
+    }
+
+    
+
+    /* Cards with red, blue, black matte grey theme */
+
+    .item {
+
+        background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 50%, #f5f5f5 100%);
+
+        border-radius: 12px;
+
+        padding: 16px;
+
+        margin-bottom: 16px;
+
+        transition: all 0.3s ease;
+
+        border: 1px solid rgba(220, 20, 60, 0.1);
+
+        position: relative;
+
+        overflow: hidden;
+
+    }
+
+    
+
+    .item::before {
+
+        content: '';
+
+        position: absolute;
+
+        top: 0;
+
+        left: -100%;
+
+        width: 100%;
+
+        height: 100%;
+
+        background: linear-gradient(90deg, transparent, rgba(220, 20, 60, 0.1), transparent);
+
+        transition: left 0.6s ease;
+
+    }
+
+    
+
+    .item:hover::before {
+
+        left: 100%;
+
+    }
+
+    
+
+    .item:hover {
+
+        background: linear-gradient(135deg, #fff5f5 0%, #f0f0f0 50%, #f5f5f5 100%);
+
+        transform: translateY(-2px);
+
+        box-shadow: 0 8px 25px rgba(220, 20, 60, 0.15);
+
+    }
+
+    
+
+    .item:last-child {
+
+        margin-bottom: 0;
+
+    }
+
+    
+
+    .item-title {
+
+        font-size: 16px;
+
+        font-weight: 600;
+
+        color: #000000e0;
+
+        margin: 0 0 8px 0;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+    }
+
+    
+
+    .item-title span {
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 8px;
+
+    }
+
+    
+
+    .item-title .badge {
+
+        background-color: #dc143c;
+
+        color: white;
+
+        padding: 2px 8px;
+
+        border-radius: 12px;
+
+        font-size: 12px;
+
+        font-weight: 500;
+
+        position: absolute;
+
+        top: 12px;
+
+        right: 12px;
+
+    }
+
+    
+
+    .item-title .badge.completed {
+
+        background-color: #28a745;
+
+        color: white;
+
+        padding: 2px 8px;
+
+        border-radius: 12px;
+
+        font-size: 12px;
+
+        font-weight: 500;
+
+        position: absolute;
+
+        top: 12px;
+
+        right: 12px;
+
+    }
+
+    
+
+    .item-title .badge.academic {
+
+        background-color: #28a745;
+
+        color: white;
+
+        padding: 2px 8px;
+
+        border-radius: 12px;
+
+        font-size: 12px;
+
+        font-weight: 500;
+
+        position: absolute;
+
+        top: 12px;
+
+        right: 12px;
+
+    }
+
+    
+
+    .item-title .badge.sports {
+
+        background-color: #ffd700;
+
+        color: #333;
+
+        padding: 2px 8px;
+
+        border-radius: 12px;
+
+        font-size: 12px;
+
+        font-weight: 500;
+
+        position: absolute;
+
+        top: 12px;
+
+        right: 12px;
+
+    }
+
+    
+
+    .item-description {
+
+        font-size: 14px;
+
+        color: #00000099;
+
+        line-height: 1.6;
+
+        margin: 0;
+
+    }
+
+    
+
+    /* Vibrant skills with rainbow colors */
+
+    .skills-grid {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+
+        margin-top: 16px;
+
+    }
+
+    
+
+    .skill-item {
+
+        padding: 8px 16px;
+
+        border-radius: 20px;
+
+        font-size: 14px;
+
+        font-weight: 600;
+
+        transition: all 0.3s ease;
+
+        cursor: default;
+
+        position: relative;
+
+        overflow: hidden;
+
+        text-transform: uppercase;
+
+        letter-spacing: 0.5px;
+
+    }
+
+    
+
+    /* Red, blue, black matte grey skill colors */
+
+    .skill-item:nth-child(1) {
+
+        background: linear-gradient(135deg, #dc143c, #8b0000);
+
+        color: white;
+
+        border: 2px solid #8b0000;
+
+    }
+
+    
+
+    .skill-item:nth-child(2) {
+
+        background: linear-gradient(135deg, #003d82, #001f4d);
+
+        color: white;
+
+        border: 2px solid #001f4d;
+
+    }
+
+    
+
+    .skill-item:nth-child(3) {
+
+        background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+
+        color: white;
+
+        border: 2px solid #1a1a1a;
+
+    }
+
+    
+
+    .skill-item:nth-child(4) {
+
+        background: linear-gradient(135deg, #8b0000, #dc143c);
+
+        color: white;
+
+        border: 2px solid #660000;
+
+    }
+
+    
+
+    .skill-item:nth-child(5) {
+
+        background: linear-gradient(135deg, #003d82, #4169e1);
+
+        color: white;
+
+        border: 2px solid #001f4d;
+
+    }
+
+    
+
+    .skill-item:nth-child(6) {
+
+        background: linear-gradient(135deg, #2c2c2c, #404040);
+
+        color: white;
+
+        border: 2px solid #1a1a1a;
+
+    }
+
+    
+
+    .skill-item:nth-child(n+7) {
+
+        background: linear-gradient(135deg, #dc143c, #003d82);
+
+        color: white;
+
+        border: 2px solid #8b0000;
+
+    }
+
+    
+
+    .skill-item::before {
+
+        content: '';
+
+        position: absolute;
+
+        top: 0;
+
+        left: -100%;
+
+        width: 100%;
+
+        height: 100%;
+
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+
+        transition: left 0.5s ease;
+
+    }
+
+    
+
+    .skill-item:hover::before {
+
+        left: 100%;
+
+    }
+
+    
+
+    .skill-item:hover {
+
+        transform: translateY(-3px) scale(1.1);
+
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+    }
+
+    
+
+    /* About section with red, blue, black matte grey theme */
+
+    .about-text {
+
+        font-size: 15px;
+
+        color: #000000e0;
+
+        line-height: 1.6;
+
+        background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 50%, #f5f5f5 100%);
+
+        padding: 20px;
+
+        border-radius: 12px;
+
+        border: 1px solid rgba(220, 20, 60, 0.2);
+
+        position: relative;
+
+        overflow: hidden;
+
+    }
+
+    
+
+    .about-text::before {
+
+        content: '';
+
+        position: absolute;
+
+        top: 0;
+
+        left: 0;
+
+        right: 0;
+
+        height: 3px;
+
+        background: linear-gradient(90deg, #dc143c, #003d82, #2c2c2c, #dc143c, #003d82, #2c2c2c);
+
+        background-size: 200% 100%;
+
+        animation: colorShift 3s linear infinite;
+
+    }
+
+    
+
+    /* Mobile responsive design */
+
+    @media (max-width: 768px) {
+
+        .profile-container {
+
+            border-radius: 0;
+
+            box-shadow: none;
+
+        }
+
         
-        <div class="sdg-content">
-            <div class="sdg-targets">
-                <h3>Key Targets</h3>
-                <div class="target-list">
-                    <div class="target-item">
-                        <i class="fas fa-bullseye"></i>
-                        <span>Strengthen resilience to climate-related hazards</span>
-                    </div>
-                    <div class="target-item">
-                        <i class="fas fa-bullseye"></i>
-                        <span>Integrate climate measures into policies</span>
-                    </div>
-                    <div class="target-item">
-                        <i class="fas fa-bullseye"></i>
-                        <span>Improve education on climate change</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="sdg-stats">
-                <div class="stat-card">
-                    <div class="stat-number">4.2°C</div>
-                    <div class="stat-label">Temperature Rise Without Action</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">2030</div>
-                    <div class="stat-label">Deadline for Climate Action</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- SDG 3 Section -->
-<section id="sdg3" class="sdg-section sdg3">
-    <div class="container">
-        <div class="sdg-header">
-            <div class="sdg-logo">
-                <span class="sdg-number">3</span>
-                <span class="sdg-text">GOOD HEALTH</span>
-            </div>
-            <h2 class="section-title">SDG 3: Good Health and Well-being</h2>
-            <p class="sdg-description">
-                Ensure healthy lives and promote well-being for all at all ages by addressing air pollution's health impacts.
-            </p>
-        </div>
+        .header {
+
+            height: 120px;
+
+        }
+
         
-        <div class="sdg-content">
-            <div class="health-impact">
-                <h3>Health Impacts of Air Pollution</h3>
-                <div class="impact-grid">
-                    <div class="impact-card">
-                        <i class="fas fa-lungs"></i>
-                        <h4>Respiratory Diseases</h4>
-                        <p>Asthma, COPD, and lung cancer rates increase with air pollution exposure.</p>
-                    </div>
-                    <div class="impact-card">
-                        <i class="fas fa-heart"></i>
-                        <h4>Cardiovascular Problems</h4>
-                        <p>Air pollution increases risk of heart attacks, strokes, and hypertension.</p>
-                    </div>
-                    <div class="impact-card">
-                        <i class="fas fa-brain"></i>
-                        <h4>Neurological Effects</h4>
-                        <p>Cognitive development in children and brain function in adults are affected.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="health-solutions">
-                <h3>Protecting Our Health</h3>
-                <ul class="solutions-list">
-                    <li>Monitor air quality daily</li>
-                    <li>Use air purifiers indoors</li>
-                    <li>Wear masks during high pollution days</li>
-                    <li>Exercise in clean air environments</li>
-                    <li>Support clean energy initiatives</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Interactive Impact Section -->
-<section id="impact" class="impact">
-    <div class="container">
-        <h2 class="section-title">Measure Your Impact</h2>
+        .profile-section {
+
+            flex-direction: column;
+
+            align-items: center;
+
+            text-align: center;
+
+            padding: 0 16px;
+
+            margin-top: -60px;
+
+            gap: 16px;
+
+        }
+
         
-        <div class="interactive-tools">
-            <!-- Carbon Calculator -->
-            <div class="calculator-card">
-                <h3><i class="fas fa-calculator"></i> Carbon Footprint Calculator</h3>
-                <div class="calculator-form">
-                    <div class="form-group">
-                        <label for="transport">Daily Transportation (km)</label>
-                        <input type="number" id="transport" placeholder="Enter km traveled">
-                    </div>
-                    <div class="form-group">
-                        <label for="electricity">Daily Electricity Usage (kWh)</label>
-                        <input type="number" id="electricity" placeholder="Enter kWh">
-                    </div>
-                    <div class="form-group">
-                        <label for="waste">Weekly Waste (kg)</label>
-                        <input type="number" id="waste" placeholder="Enter kg of waste">
-                    </div>
-                    <button class="btn btn-primary" onclick="calculateCarbon()">Calculate Impact</button>
-                    <div id="carbon-result" class="result-box"></div>
-                </div>
-            </div>
 
-            <!-- Air Quality Quiz -->
-            <div class="quiz-card">
-                <h3><i class="fas fa-question-circle"></i> Air Quality Quiz</h3>
-                <div class="quiz-container">
-                    <div class="question" id="quiz-question">
-                        <p>What is the main cause of air pollution in urban areas?</p>
-                        <div class="options">
-                            <button class="option-btn" onclick="checkAnswer('A')">A) Industrial emissions</button>
-                            <button class="option-btn" onclick="checkAnswer('B')">B) Vehicle emissions</button>
-                            <button class="option-btn" onclick="checkAnswer('C')">C) Natural sources</button>
-                            <button class="option-btn" onclick="checkAnswer('D')">D) Agricultural burning</button>
-                        </div>
-                    </div>
-                    <div id="quiz-feedback" class="quiz-feedback"></div>
-                </div>
-            </div>
-        </div>
+        .profile-image {
 
-                </div>
-</section>
+            width: 120px;
 
-<!-- Call to Action Section -->
-<section id="action" class="action">
-    <div class="container">
-        <h2 class="section-title">Take Action Today</h2>
-        <p class="action-subtitle">Every small step counts towards a cleaner, healthier planet</p>
+            height: 120px;
+
+        }
+
         
-        <div class="action-grid">
-            <div class="action-card">
-                <i class="fas fa-bicycle"></i>
-                <h3>Sustainable Transport</h3>
-                <p>Use public transport, cycle, or walk instead of driving alone.</p>
-                <button class="action-btn">Learn How</button>
-            </div>
-            
-            <div class="action-card">
-                <i class="fas fa-solar-panel"></i>
-                <h3>Renewable Energy</h3>
-                <p>Switch to clean energy sources and reduce electricity consumption.</p>
-                <button class="action-btn">Get Started</button>
-            </div>
-            
-            <div class="action-card">
-                <i class="fas fa-recycle"></i>
-                <h3>Reduce, Reuse, Recycle</h3>
-                <p>Minimize waste and choose sustainable products.</p>
-                <button class="action-btn">Take Pledge</button>
-            </div>
-            
-            <div class="action-card">
-                <i class="fas fa-tree"></i>
-                <h3>Plant Trees</h3>
-                <p>Support reforestation and create green spaces in your community.</p>
-                <button class="action-btn">Join Initiative</button>
-            </div>
-            
-            <div class="action-card">
-                <i class="fas fa-users"></i>
-                <h3>Spread Awareness</h3>
-                <p>Educate others and advocate for clean air policies.</p>
-                <button class="action-btn">Share Now</button>
-            </div>
-            
-            <div class="action-card">
-                <i class="fas fa-hand-holding-heart"></i>
-                <h3>Support Organizations</h3>
-                <p>Donate to or volunteer with environmental organizations.</p>
-                <button class="action-btn">Find Groups</button>
-            </div>
-        </div>
-        
-        <div class="pledge-section">
-            <h3>Make Your Clean Air Pledge</h3>
-            <div class="pledge-form">
-                <input type="text" id="pledge-name" placeholder="Your name">
-                <textarea id="pledge-text" placeholder="I pledge to..."></textarea>
-                <button class="btn btn-primary" onclick="submitPledge()">Submit Pledge</button>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Resources Section -->
-<section id="resources" class="resources">
-    <div class="container">
-        <h2 class="section-title">Educational Resources</h2>
-        
-        <div class="resources-grid">
-            <div class="resource-card">
-                <i class="fas fa-book"></i>
-                <h3>Research Papers</h3>
-                <p>Latest scientific studies on air pollution and climate change.</p>
-                <a href="#" class="resource-link">Access Papers</a>
-            </div>
-            
-            <div class="resource-card">
-                <i class="fas fa-video"></i>
-                <h3>Educational Videos</h3>
-                <p>Documentaries and tutorials about air quality and health.</p>
-                <a href="#" class="resource-link">Watch Videos</a>
-            </div>
-            
-            <div class="resource-card">
-                <i class="fas fa-download"></i>
-                <h3>Downloadable Guides</h3>
-                <p>PDF guides for schools and communities on clean air initiatives.</p>
-                <a href="#" class="resource-link">Download</a>
-            </div>
-            
-            <div class="resource-card">
-                <i class="fas fa-gamepad"></i>
-                <h3>Interactive Games</h3>
-                <p>Learn about air pollution through fun educational games.</p>
-                <a href="#" class="resource-link">Play Games</a>
-            </div>
-        </div>
-        
-        <div class="contact-section">
-            <h3>Get Involved</h3>
-            <p>Join our community of change-makers working for cleaner air and a healthier planet.</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>info@cleanairplanet.org</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+1 (555) 123-4567</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Global Environmental Initiative</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        .profile-info {
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>About This Project</h4>
-                <p>An educational website created to raise awareness about air pollution and its impact on climate change and human health, supporting SDG 13 and SDG 3.</p>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#about">About Air Pollution</a></li>
-                    <li><a href="#sdg13">SDG 13 Climate Action</a></li>
-                    <li><a href="#sdg3">SDG 3 Good Health</a></li>
-                    <li><a href="#action">Take Action</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2026 Clean Air, Clean Planet. Created for ICT Competition 2026. Supporting SDG 13 & SDG 3.</p>
-            <p>Theme: Clean Air, Clean Planet - SDG 13 & SDG 3 in Action | Dates: 26-28 January 2026</p>
-        </div>
-    </div>
-</footer>
+            padding-bottom: 0;
 
-<script src="script.js"></script>
+        }
+
+        
+
+        .section {
+
+            padding: 16px;
+
+        }
+
+        
+
+        .section-title {
+
+            font-size: 18px;
+
+        }
+
+        
+
+        .item {
+
+            padding: 12px;
+
+        }
+
+        
+
+        .skills-grid {
+
+            gap: 6px;
+
+        }
+
+        
+
+        .skill-item {
+
+            padding: 4px 10px;
+
+            font-size: 13px;
+
+        }
+
+    }
+
+    
+
+    @media (max-width: 480px) {
+
+        .header {
+
+            height: 100px;
+
+        }
+
+        
+
+        .profile-section {
+
+            padding: 0 12px;
+
+        }
+
+        
+
+        .section {
+
+            padding: 12px;
+
+        }
+
+        
+
+        .name {
+
+            font-size: 20px;
+
+        }
+
+        
+
+        .headline {
+
+            font-size: 14px;
+
+        }
+
+    }
+
+    
+
+    /* Dynamic theme island styling */
+
+    .theme-island {
+
+        position: fixed;
+
+        top: 20px;
+
+        right: 20px;
+
+        z-index: 1000;
+
+        background: rgba(255,255,255,0.95);
+
+        backdrop-filter: blur(10px);
+
+        border-radius: 20px;
+
+        padding: 8px;
+
+        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+
+        border: 1px solid rgba(255,255,255,0.2);
+
+        transition: all 0.3s ease;
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 8px;
+
+    }
+
+    
+
+    .theme-option {
+
+        background: rgba(255,255,255,0.2);
+
+        border: 2px solid rgba(255,255,255,0.3);
+
+        border-radius: 50%;
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 18px;
+
+        cursor: pointer;
+
+        transition: all 0.3s ease;
+
+        position: relative;
+
+        overflow: hidden;
+
+    }
+
+    
+
+    .theme-option:hover {
+
+        background: rgba(255,255,255,0.3);
+
+        transform: scale(1.1);
+
+    }
+
+    
+
+    .theme-option::before {
+
+        content: '';
+
+        position: absolute;
+
+        top: 0;
+
+        left: -100%;
+
+        width: 100%;
+
+        height: 100%;
+
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+
+        transition: left 0.5s ease;
+
+    }
+
+    
+
+    .theme-option:hover::before {
+
+        left: 100%;
+
+    }
+
+    
+
+    /* Dark mode theme island */
+
+    body.dark-mode .theme-island {
+
+        background: rgba(0,0,0,0.95);
+
+        border: 1px solid rgba(255,255,255,0.1);
+
+    }
+
+    
+
+    body.dark-mode .theme-option {
+
+        background: rgba(0,0,0,0.2);
+
+        border: 2px solid rgba(255,255,255,0.1);
+
+    }
+
+    
+
+    body.dark-mode .theme-option:hover {
+
+        background: rgba(0,0,0,0.3);
+
+    }
+
+    
+
+    /* Theme toggle button styling */
+
+    .theme-toggle {
+
+        position: absolute;
+
+        top: 20px;
+
+        right: 20px;
+
+        z-index: 10;
+
+    }
+
+    
+
+    .theme-btn {
+
+        background: rgba(255,255,255,0.2);
+
+        border: 2px solid rgba(255,255,255,0.3);
+
+        border-radius: 50%;
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 18px;
+
+        cursor: pointer;
+
+        transition: all 0.3s ease;
+
+    }
+
+    
+
+    .theme-btn:hover {
+
+        background: rgba(255,255,255,0.3);
+
+        transform: scale(1.1);
+
+    }
+
+    
+
+    /* Dark mode styles */
+
+    body.dark-mode {
+
+        background: 
+
+            radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+
+            radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
+
+            linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 25%, #2c2c2c 50%, #1a1a1a 75%, #0a0a0a 100%);
+
+        color: #ffffffe0;
+
+    }
+
+    
+
+    body.dark-mode .profile-container {
+
+        background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 50%, #1a1a1a 100%);
+
+        box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.2), 0 8px 32px rgba(0, 61, 130, 0.1), 0 16px 48px rgba(44, 44, 44, 0.1);
+
+    }
+
+    
+
+    body.dark-mode .item {
+
+        background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 50%, #2c2c2c 100%);
+
+        border: 1px solid rgba(220, 20, 60, 0.2);
+
+    }
+
+    
+
+    body.dark-mode .item:hover {
+
+        background: linear-gradient(135deg, #3c3c3c 0%, #2a2a2a 50%, #3c3c3c 100%);
+
+        box-shadow: 0 8px 25px rgba(220, 20, 60, 0.1);
+
+    }
+
+    
+
+    body.dark-mode .about-text {
+
+        background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 50%, #2c2c2c 100%);
+
+        border: 1px solid rgba(220, 20, 60, 0.2);
+
+        color: #ffffff99;
+
+    }
+
+    
+
+    body.dark-mode .section-title {
+
+        color: #ffffffe0;
+
+    }
+
+    
+
+    body.dark-mode .section-title::before {
+
+        border-color: transparent transparent #dc143c transparent;
+
+    }
+
+    
+
+    body.dark-mode .item-title {
+
+        color: #ffffffe0;
+
+    }
+
+    
+
+    body.dark-mode .item-description {
+
+        color: #ffffff99;
+
+    }
+
+    
+
+    body.dark-mode .header {
+
+        background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+
+    }
+
+    
+
+    body.dark-mode .header-name {
+
+        background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%);
+
+        -webkit-background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+
+        background-clip: text;
+
+    }
+
+    
+
+    body.dark-mode .header-headline {
+
+        color: rgba(255,255,255,0.8);
+
+    }
+
+    
+
+    body.dark-mode .theme-btn {
+
+        background: rgba(0,0,0,0.2);
+
+        border: 2px solid rgba(255,255,255,0.3);
+
+    }
+
+    
+
+    body.dark-mode .theme-btn:hover {
+
+        background: rgba(0,0,0,0.3);
+
+    }
+
+    
+
+    /* Smooth transitions for all interactive elements */
+
+    * {
+
+        transition: color 0.2s ease, background-color 0.2s ease;
+
+    }
+
+</style>
