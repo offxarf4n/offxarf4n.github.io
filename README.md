@@ -589,10 +589,9 @@
         <!-- Header Section -->
         <header class="header">
             <div class="header-content">
-                <img src="file:///C:/Users/f.makkar/CascadeProjects/linkedin-profile/Arfan.png" alt="Arfan Ahmad Faiz" class="profile-picture">
                 <div class="header-text">
-                    <h1 class="profile-name">Arfan Ahmad Faiz</h1>
-                    <p class="profile-headline">IGCSE Stuent l Aspiring Pilot</p>
+                    <h1 class="profile-name" style="text-align: center; font-style: italic;">Arfan Ahmad Faiz</h1>
+                    <p class="profile-headline" style="text-align: center;">IGCSE Stuent l Aspiring Pilot</p>
                 </div>
             </div>
         </header>
