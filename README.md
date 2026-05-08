@@ -599,7 +599,7 @@
         <section id="about" class="section">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <p>My name is Arfan Ahmad, and I am currently studying at Gems New Millennium School (GNMS). I am pursuing Economics, Mathematics, and Physics. My future goal is to join an aviation training program and become a pilot. It has always been my dream to become a pilot because I enjoy the idea of traveling around the world while helping people reach different destinations safely.</p>
+                <p>My name is Arfan Ahmad, and I am currently studying Economics, Mathematics, and Physics. I am a motivated and hardworking student with a strong interest in aviation, problem-solving, and personal growth. My ambition is to become a pilot, a career that combines responsibility, discipline, and the opportunity to connect people around the world. Alongside my passion for aviation, I am also interested in understanding how economies and businesses operate, which has strengthened my analytical and critical-thinking skills. I am always eager to learn new things, improve myself, and take on challenges that help me grow both academically and personally.</p>
             </div>
         </section>
 
@@ -607,7 +607,7 @@
         <section id="studies" class="section">
             <h2 class="section-title">Studies</h2>
             <div class="studies-content">
-                <p>At the same time, I am also passionate about Economics and plan to pursue it as my major. Economics is an important field because it helps people understand how businesses, governments, and markets work. It also plays a major role in solving real-world problems such as inflation, unemployment, and financial planning. Studying Economics can open doors to many career opportunities in areas like banking, business, finance, management, and public policy, making it a valuable and versatile career choice for the future.</p>
+                <p>I am currently pursuing studies in Economics, Mathematics, and Physics, subjects that have helped me develop strong analytical, logical, and decision-making skills. Economics has particularly increased my understanding of global markets, businesses, and real-world financial challenges, while Mathematics and Physics have strengthened my problem-solving abilities and attention to detail. Through my education, I continue to build a solid academic foundation that supports both my future career ambitions and personal development.</p>
             </div>
         </section>
 
